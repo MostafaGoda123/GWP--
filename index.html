@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="https://freesvg.org/storage/img/thumb/1617845797quran%20logo%204.png" type="image/x-icon">
+   <title>القران الكريم</title>
+   <link rel="stylesheet" href="CSS/style.css">
+   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+   <header>
+      <nav>
+         <img src="https://freesvg.org/storage/img/thumb/1617845797quran%20logo%204.png" alt="">
+         <ul>
+            <li><a href="#">استعراض الصور</a></li>
+            <li><a href="#">بث مباشر</a></li>
+            <li><a href="#">تفاسير</a></li>
+            <li><a href="#">راديو</a></li>
+         </ul>
+      </nav>
+      <div>
+         <p>رحله طيبه في رحاب</p>
+         <h1>القران الكريم</h1>
+      </div>
+   </header>
+
+   <section class="choose">
+      <form>
+         <div>
+            <label>اختر القارئ</label>
+            <select id="chooseReciter"></select>
+         </div><!-- اختر القارئ -->
+         <div>
+            <label>اختر رواية</label>
+            <select id="chooseMoshafs"></select>
+         </div><!-- اختر رواية -->
+         <div>
+            <label>اختر السوره</label>
+            <select id="chooseSurah"></select>
+         </div><!-- اختر السوره -->
+      </form>
+      <audio id="audioPlayer" muted controls autoplay>
+         <source src="" type="audio/mp3">
+         <source src="" type="audio/ogg">
+      </audio>
+   </section>
+
+   <section class="bass">
+      <h2>اختر قناة البث المباشر</h2>
+      <div class="btns">
+         <button onclick="playLive('https://win.holol.com/live/quran/playlist.m3u8')">قناة السنة النبوية</button>
+         <button onclick="playLive('https://win.holol.com/live/sunnah/playlist.m3u8')">قناة القران الكريم</button>
+      </div>
+      <video id="liveVideo" muted controls>
+         <source src="" type="video/mp4">
+      </video>
+   </section>
+
+   <footer></footer>
+
+   <script src="JS/main.js"></script>
+</body>
+</html>
